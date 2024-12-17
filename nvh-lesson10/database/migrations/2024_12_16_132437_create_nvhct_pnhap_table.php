@@ -21,7 +21,7 @@ return new class extends Migration
             $table->primary(arry('nvhSoPn','nvhMaVTu'));
            //$table->primary(['nvhSoDH','nvhMaVTu']);
            $table->foreign('nvhSoPn')->references('nvhSoPn')->on('nvhpnhap');
-           $table->foreign('nvhMaVTu')->references('nvhMaVTu')->on('nvhavattuavattu');
+           $table->foreign('nvhMaVTu')->references('nvhMaVTu')->on('nvhvattu');
 
         });
     }

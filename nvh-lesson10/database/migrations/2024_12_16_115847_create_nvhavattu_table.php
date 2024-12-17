@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nvhMaVtu')->primary();
             $table->string('nvhTenVTu')->unique();
             $table->string('nvhDVTinh');
-            $table->float('nvhhanTram');
+            $table->float('nvhphanTram');
             //$table->timestamps();
         });
     }

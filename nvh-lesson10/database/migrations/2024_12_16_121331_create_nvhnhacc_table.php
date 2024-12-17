@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('nvhnhacc', function (Blueprint $table) {
            // $table->id();
             $table->string('nvhNhacc')->primary();
-            $table->string('nvhTenNCC')->;
+            $table->string('nvhTenNCC')->unique();
             $table->string('nvhDiaChi');
             $table->string('nvhSDT');
             //$table->timestamps();

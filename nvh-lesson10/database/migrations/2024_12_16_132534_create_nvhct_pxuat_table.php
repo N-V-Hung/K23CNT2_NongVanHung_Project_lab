@@ -14,14 +14,14 @@ return new class extends Migration
         Schema::create('nvhctPxuat', function (Blueprint $table) {
             //$table->id();
             //$table->timestamps();
-            $table->string('nvhSoPxx');
+            $table->string('nvhSoPx');
             $table->string('nvhMaVTu');
             $table->interger('nvhSLNhap');
             $table->float('nvhDGNhap');
-            $table->primary(arry('nvhSoPxx','nvhMaVTu'));
+            $table->primary(arry('nvhSoPx','nvhMaVTu'));
            //$table->primary(['nvhSoDH','nvhMaVTu']);
-           $table->foreign('nvhSoPxxx')->references('nvhSoPn')->on('nvhpxuat');
-           $table->foreign('nvhMaVTu')->references('nvhMaVTu')->on('nvhavattuavattu');
+           $table->foreign('nvhSoPx')->references('nvhSoPn')->on('nvhpxuat');
+           $table->foreign('nvhMaVTu')->references('nvhMaVTu')->on('nvhavattu');
         });
     }
 

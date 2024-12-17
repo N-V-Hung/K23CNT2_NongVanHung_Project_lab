@@ -14,7 +14,7 @@ class nvhController extends Controller
         $nvhSinhvien = NvhSinhVien::all();
         return view('nvhSinhVien.nvh-list',['nvhsinhvien'=>$nvhSinhvien]);
     }
-    
+   
     public function nvhCreate()
     {
         return view('nvhSinhVien.nvh-create');

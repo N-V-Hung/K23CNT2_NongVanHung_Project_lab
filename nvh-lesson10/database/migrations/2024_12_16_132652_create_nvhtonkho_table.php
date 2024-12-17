@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('nvhMaVTu');
             $table->interger('nvhSLNhap');
             $table->float('nvhDGNhap');
-           $table->foreign('nvhMaVTu')->references('nvhMaVTu')->on('nvhavattuavattu');
+           $table->foreign('nvhMaVTu')->references('nvhMaVTu')->on('nvhvattu');
         });
     }
 

@@ -13,6 +13,7 @@ class nvhVatTuTableseed extends Seeder
      */
     public function run(): void
     {
+        /*
         DB::table('nvhavattu')->insert([
             'nvhMaVTu'=>'DD01',
             'nvhTenVTu'=>'Đầu DVD Hitachi 1 cửa',
@@ -25,5 +26,17 @@ class nvhVatTuTableseed extends Seeder
             'nvhDVTinh'=>'Bộ',
             'PnvhhanTram'=>50,
         ]);
+        */
+        $faker = Faker::create();
+        foreach(range(1,100) as $index)
+        {
+            DB::table('nvhvattu')->insert([
+                'nvhMaVTu'=>$faker->word(4),
+                'nvhTenVTu'=>$faker->sentence(5),
+                'nvhDVTinh'=>$faker->word(3),
+                'nvhPhanTram'=>$faker->randomFloat('2',0,100)
+               
+            ]);
+        }
     }
 }
